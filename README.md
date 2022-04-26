@@ -1,2 +1,3 @@
-# Discord gihtub issues bot - Create github issues on the go
+# Discord github issues bot
+## Create github issues on the go
 
