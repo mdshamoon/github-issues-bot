@@ -32,14 +32,28 @@ client.on("ready", () => {
 
     if (guild) {
         commands = guild.commands;
+
+        const permissions = [
+            {
+                guild,
+                id: "968673008807977000",
+                type: 1,
+                permission: true,
+            },
+        ];
+
+        commands
+            ?.create({
+                defaultPermission: true,
+                name: "Open github issue",
+                type: 3,
+            })
+            .then((command) => {
+                command.permissions.add({ permissions });
+            });
     } else {
         commands = client.application?.commands;
     }
-
-    commands?.create({
-        name: "Open github issue",
-        type: 3,
-    });
 });
 
 client.on("interactionCreate", async (interaction) => {
