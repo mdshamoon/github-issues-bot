@@ -60,8 +60,8 @@ client.on("interactionCreate", async (interaction) => {
 
         octokit.rest.issues
             .create({
-                owner: "mdshamoon",
-                repo: "glific-frontend",
+                owner: process.env.GITHUB_USERNAME || "",
+                repo: process.env.GITHUB_REPOSITORY || "",
                 title: issueTitle,
                 body: issueDescription,
             })
