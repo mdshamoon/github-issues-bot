@@ -8,6 +8,7 @@
 
 1. Create an account on discord developer portal and add an application
 2. Create a bot
+3. Invite the bot to your server
 
 ## Installation steps
 
@@ -18,8 +19,8 @@
     - GUILD_ID: Right click on the server name. At the last their should be an option for copy ID
         <img width="359" alt="Screenshot 2022-05-26 at 9 13 36 AM" src="https://user-images.githubusercontent.com/32592458/170412419-9355fefe-edea-45f2-91b7-b8a5934f9028.png">
 
-    - GITHUB_USERNAME: The repository organization or username. Ex In this https://github.com/mdshamoon/glific-frontend. the username is `mdshamoon`
-    - GITHUB_REPOSITORY: repository name Ex In this https://github.com/mdshamoon/glific-frontend repo name is `glific-frontend`
+    - GITHUB_USERNAME: The repository organization or username. Ex. In this https://github.com/mdshamoon/glific-frontend. the username is `mdshamoon`
+    - GITHUB_REPOSITORY: the name of the repository. Ex. In this https://github.com/mdshamoon/glific-frontend repo name is `glific-frontend`
 3. Run `yarn install`
 
 ## Hosting steps
